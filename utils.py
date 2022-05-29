@@ -17,3 +17,9 @@ def striped_data():
         content = {'message': 'Something went wrong'}
         return content, req.status_code
 
+def verify_user(info):
+    if(info['username'] == "test" and info['password']):
+        return True
+    else:
+        return False
+    
